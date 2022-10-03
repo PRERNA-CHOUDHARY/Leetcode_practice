@@ -12,22 +12,20 @@ Two binary trees are considered the same if they are structurally identical, and
 
 **Example:**
 
-'''
-
+```
 Input: p = [1,2,3], q = [1,2,3]
 Output: true
+```
 
-'''
-
-'''
+```
 Input: p = [1,2], q = [1,null,2]
 Output: false
-'''
+```
 
-'''
+```
 Input: p = [1,2,1], q = [1,1,2]
 Output: false
-''' 
+``` 
 
 
 **Constraints:**
@@ -37,17 +35,17 @@ Output: false
 
 
 
-'''
+```
 /*
  Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
+  struct TreeNode {
+      int val;
+      TreeNode *left;
+      TreeNode *right;
+     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+      TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+      TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+  };
  */
  
 class Solution {
@@ -61,5 +59,4 @@ public:
         return (isSameTree(p->left,q->left) && isSameTree(p->right,q->right));
     }
 };
-
-'''
+```
