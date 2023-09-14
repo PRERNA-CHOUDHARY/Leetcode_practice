@@ -29,7 +29,7 @@ class Solution{
             return ;
        
            int x=s.top();
-           s.pop();
+           s.pop(); 
            Reverse1(s);
            pushBottom(s,x);
            
